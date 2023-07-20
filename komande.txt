@@ -1,0 +1,10 @@
+docker compose -f development.yaml up -d
+docker stop $(docker ps -aq)
+docker rm $(docker ps -aq)
+netstat -ano | findstr :3306
+docker rmi $(docker images -aq)
+pip install --no-cache-dir -r requirements.txt
+pip install -r requirements.txt
+docker logs storemanagementsystem-blockchain-1
+rm -r storedata
+rm -r authdata
