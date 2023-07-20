@@ -1,0 +1,6 @@
+flask==2.2.3
+flask-sqlalchemy==3.0.3
+flask-migrate==4.0.4
+mysqlclient==2.1.1
+flask-jwt-extended==4.4.4
+web3==6.4.0
